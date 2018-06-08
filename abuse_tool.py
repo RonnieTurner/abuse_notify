@@ -88,8 +88,8 @@ def send_tool(message):
         # conect to smtp server and send email then close connection
         smtp_obj = smtplib.SMTP('smtp.gmail.com', 587)
         smtp_obj.starttls()
-        smtp_obj.login('support@upcloud.com', 'krezpncvvfirtpiy')
-        smtp_obj.sendmail("support@upcloud.com",
+        smtp_obj.login('email@email.com', 'password')
+        smtp_obj.sendmail("email@email.com",
                           to_list, message)
         smtp_obj.quit()
 
